@@ -17,13 +17,12 @@ app = FastAPI()
 # memasukkan functionnya apa (get dkk) kemudian url (/)
 # endpoint pertama/root  untuk mendapatkan pesan "Selamat Datang"
 @app.get("/")
-
 def getWelcome(): #function untuk menghandle endpoint 
     return {
         "msg": "Selamat Datamg!"
     }
 
-# syarat membuat endpoint, mendifne endpoint -> mendefine function untuk endpoint, tiap endpoint akan ada function tersendiri. 
+# syarat membuat endpoint, mendefine endpoint -> mendefine function untuk endpoint, tiap endpoint akan ada function tersendiri. 
 # ketika client mengirim request akan dibaca oleh api 
 # application start up complete -> menandakan computer kita sudah menjadi API, tapi juga menjadi Client 
 # Ketika menjadi API akan freeze, ketika ingin balik ke terimnal biasa harus mematikan FASTAPI, dengan mengklik ctrl + C u/ keluar dari fast api
